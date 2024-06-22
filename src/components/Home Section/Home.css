@@ -1,0 +1,237 @@
+e:root {
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(185, 92%, 41%);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: #031a30;
+  --formColor: rgb(2, 15, 29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight: 3rem;
+}
+
+
+
+
+.home .homeContent {
+  padding: 4rem 1.5rem;
+}
+.home .homeContent .introText {
+  font-size: 1.3rem;
+  color: var(--primaryColor);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.home .homeContent .title {
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: var(--textColor);
+  padding: 0.7rem 0;
+}
+.home .homeContent .subTitle {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--secondaryColor);
+  line-height: 2rem;
+  padding: 0.5rem 0;
+}
+.home .homeContent .homeParagraph {
+  font-size: 1.3rem;
+  color: var(--paragraphColor);
+  padding: 1rem 0;
+  max-width: 600px;
+}
+.home .homeContent .lowerHomeSection .contactBtn {
+  padding: 0.6rem 1rem;
+  background: var(--primaryColor);
+  color: var(--BgColor);
+  border: none;
+  outline: none;
+}
+.home .homeContent .lowerHomeSection .contactBtn:hover {
+  background: var(--primaryHover);
+}
+.home .homeContent .lowerHomeSection .contactBtn a {
+  font-size: 18px;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--BgColor);
+}
+.home .homeContent .scrollDiv {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.home .homeContent .scrollDiv .scroll {
+  font-size: 1rem;
+  color: var(--primaryColor);
+}
+.home .homeContent .scrollDiv .icon {
+  font-size: 1.3rem;
+  margin-left: 0.6rem;
+  color: var(--primaryColor);
+  animation: move 0.5s infinite;
+  cursor: pointer;
+}
+.subTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.icon {
+  margin-left: 10px;
+}
+@keyframes move {
+  0% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+.home .leftIcons, .home .rightEmail {
+  display: none;
+  position: fixed;
+}
+
+@media screen and (min-width: 480px) {
+  .home .homeContent {
+    padding: 5rem 1.5rem;
+  }
+  .home .homeContent .introText {
+    font-size: 1.5rem;
+  }
+  .home .homeContent .title {
+    font-size: 3.5rem;
+  }
+  .home .homeContent .subTitle {
+    font-size: 2.1rem;
+  }
+  .home .homeContent .homeParagraph {
+    font-size: 1.5rem;
+  }
+  .home .homeContent .lowerHomeSection .contactBtn {
+    padding: 0.8rem 1.5rem;
+  }
+  .home .homeContent .lowerHomeSection .contactBtn a {
+    font-size: 22px;
+  }
+  .home .homeContent .scrollDiv {
+    padding-top: 1.5rem;
+  }
+  .home .homeContent .scrollDiv .icon {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .home .homeContent {
+    width: 70%;
+    margin: auto;
+    padding: 5rem 1.5rem;
+  }
+  .home .homeContent .introText {
+    font-size: 1.5rem;
+  }
+  .home .homeContent .title {
+    font-size: 3.5rem;
+  }
+  .home .homeContent .subTitle {
+    font-size: 2.1rem;
+  }
+  .home .homeContent .homeParagraph {
+    font-size: 1.5rem;
+  }
+  .home .homeContent .lowerHomeSection .contactBtn {
+    padding: 0.8rem 1.5rem;
+  }
+  .home .homeContent .lowerHomeSection .contactBtn a {
+    font-size: 22px;
+  }
+  .home .homeContent .scrollDiv {
+    padding-top: 1.5rem;
+  }
+  .home .homeContent .scrollDiv .icon {
+    font-size: 1.5rem;
+  }
+  .home .leftIcons, .home .rightEmail {
+    display: block;
+    position: fixed;
+  }
+  .home .leftIcons .icon, .home .rightEmail .icon {
+    color: var(--secondaryColor);
+  }
+  .home .leftIcons a, .home .rightEmail a {
+    font-weight: 600;
+    color: var(--secondaryColor);
+  }
+  .home .leftIcons .line, .home .rightEmail .line {
+    margin: auto;
+    content: "";
+    background: var(--secondaryColor);
+    height: 100px;
+    width: 1px;
+  }
+  .home .leftIcons {
+    left: 5%;
+    bottom: 0;
+  }
+  .home .leftIcons .socials a {
+    color: var(--textColor);
+  }
+  .home .leftIcons .socials a:hover {
+    color: var(--primaryColor);
+  }
+  .home .rightEmail {
+    right: 0%;
+    bottom: 0;
+  }
+  .home .rightEmail .emailAddress {
+    transform: rotate(90deg) translate(-90px, 0px);
+  }
+  .home .rightEmail .emailAddress a {
+    letter-spacing: 1px;
+    color: var(--textColor);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home .homeContent {
+    padding: 6rem;
+  }
+  .home .homeContent .introText {
+    font-size: 1, 5rem;
+  }
+  .home .homeContent .title {
+    font-size: 5rem;
+  }
+  .home .homeContent .subTitle {
+    line-height: 2.5rem;
+    font-size: 2.4rem;
+  }
+  .home .homeContent .homeParagraph {
+    font-size: 1.8rem;
+  }
+  .home .leftIcons .line, .home .rightEmail .line {
+    margin: auto;
+    content: "";
+    background: var(--secondaryColor);
+    height: 150px;
+    width: 1px;
+  }
+  .home .leftIcons {
+    left: 5%;
+  }
+  .home .rightEmail {
+    right: 0%;
+  }
+}/*# sourceMappingURL=Home.css.map */

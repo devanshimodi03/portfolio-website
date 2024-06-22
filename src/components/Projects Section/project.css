@@ -1,0 +1,117 @@
+:root {
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(185, 92%, 41%);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: #031a30;
+  --formColor: rgb(2, 15, 29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight: 3rem;
+}
+
+.projects .projectContainer, .projects .projectContainer2 {
+  margin-top: 1rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(1, 1fr);
+}
+.projects .projectContainer .singleProject, .projects .projectContainer2 .singleProject {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  height: 100%;
+  background-color: var(--projectCardColor);
+}
+.projects .projectContainer .singleProject .externalLinks, .projects .projectContainer2 .singleProject .externalLinks {
+  width: 100%;
+  justify-content: space-between;
+}
+.projects .projectContainer .singleProject .externalLinks .githubIcon a, .projects .projectContainer .singleProject .externalLinks .youtubeIcon a, .projects .projectContainer2 .singleProject .externalLinks .githubIcon a, .projects .projectContainer2 .singleProject .externalLinks .youtubeIcon a {
+  color: var(--primaryColor);
+}
+.projects .projectContainer .singleProject .externalLinks .githubIcon a:hover, .projects .projectContainer .singleProject .externalLinks .youtubeIcon a:hover, .projects .projectContainer2 .singleProject .externalLinks .githubIcon a:hover, .projects .projectContainer2 .singleProject .externalLinks .youtubeIcon a:hover {
+  color: var(--primaryHover);
+}
+.projects .projectContainer .singleProject:hover, .projects .projectContainer2 .singleProject:hover {
+  transform: translateY(-7px);
+  border-bottom: 2px solid var(--primaryColor);
+}
+.projects .projectContainer .singleProject .imgDiv, .projects .projectContainer2 .singleProject .imgDiv {
+  height: 150px;
+  width: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects .projectContainer .singleProject .imgDiv img, .projects .projectContainer2 .singleProject .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.projects .projectContainer .singleProject .projectTitle, .projects .projectContainer2 .singleProject .projectTitle {
+  display: flex;
+  font-weight: 600;
+  color: var(--textColor);
+}
+.projects .projectContainer .singleProject .desc, .projects .projectContainer2 .singleProject .desc {
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+.projects .projectContainer .singleProject .technologies, .projects .projectContainer2 .singleProject .technologies {
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+.projects .projectContainer .singleProject .technologies small, .projects .projectContainer2 .singleProject .technologies small {
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+.projects .projectContainer2 {
+  display: none;
+}
+.projects .showMoreBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.projectContainer2_Grid {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .projects .projectContainer, .projects .projectContainer2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 769px) {
+  .projects {
+    width: 70%;
+    margin: auto;
+  }
+  .projects .projectContainer, .projects .projectContainer2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1150px) {
+  .projects .projectContainer, .projects .projectContainer2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects .projectContainer .singleProject .desc, .projects .projectContainer2 .singleProject .desc {
+    font-size: 17px;
+  }
+  .projects .projectContainer .singleProject .technologies small, .projects .projectContainer2 .singleProject .technologies small {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .projects {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}/*# sourceMappingURL=project.css.map */

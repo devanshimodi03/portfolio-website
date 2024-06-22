@@ -1,0 +1,199 @@
+.projectTitle {
+  display: flex;
+  font-weight: 600;
+  color: var(--textColor);
+}
+
+.desc {
+  color: var(--secondaryColor);
+}
+
+.technologies {
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+.technologies small {
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+
+:root {
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(185, 92%, 41%);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: #031a30;
+  --formColor: rgb(2, 15, 29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight: 3rem;
+}
+
+.contact .contactContainer {
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact .contactContainer .socialContacts {
+  justify-content: center;
+}
+.contact .contactContainer .socialContacts h3 {
+  color: var(--secondaryColor);
+  padding: 1rem 0;
+  text-align: center;
+}
+.contact .contactContainer .socialContacts .card {
+  display: grid;
+  align-items: center;
+  row-gap: 10px;
+  padding: 1.5rem 1.5rem;
+  width: 240px;
+  height: -moz-max-content;
+  height: max-content;
+  background: var(--projectCardColor);
+  border-radius: 10px;
+  text-align: center;
+}
+.contact .contactContainer .socialContacts .card .instaIcon {
+  color: var(--primaryColor);
+}
+.contact .contactContainer .socialContacts .card h4 {
+  color: var(--textColor);
+  font-size: 18px;
+}
+.contact .contactContainer .socialContacts .card .userName {
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+.contact .contactContainer .socialContacts .card a {
+  justify-content: center;
+  gap: 5px;
+  color: var(--primaryHover);
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact .contactContainer .socialContacts .card a .icon {
+  font-size: 20px;
+}
+.contact .contactContainer .socialContacts .card a:hover {
+  color: var(--primaryColor);
+}
+.contact .contactContainer .socialContacts .card a:hover .icon {
+  transform: translateX(10px);
+}
+.contact .contactContainer .form {
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+.contact .contactContainer .form h3 {
+  text-align: center;
+  color: var(--secondaryColor);
+}
+.contact .contactContainer .form form {
+  width: 100%;
+  text-align: center;
+}
+.contact .contactContainer .form form input, .contact .contactContainer .form form textarea {
+  height: 1rem;
+  width: 90%;
+  padding: 1.5rem 0.5rem;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid var(--secondaryColor);
+  margin: 0.5rem 0;
+  outline: none;
+  color: var(--textColor);
+  font-weight: 600;
+}
+.contact .contactContainer .form form input::-moz-placeholder, .contact .contactContainer .form form textarea::-moz-placeholder {
+  color: var(--secondaryColor);
+  opacity: 0.5;
+}
+.contact .contactContainer .form form input::placeholder, .contact .contactContainer .form form textarea::placeholder {
+  color: var(--secondaryColor);
+  opacity: 0.5;
+}
+.contact .contactContainer .form form textarea {
+  height: 150px;
+}
+.contact .contactContainer .form form .formBtn {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: none;
+  padding: 1rem 0;
+  border-radius: 10px;
+  background: var(--primaryColor);
+  color: var(--BgColor);
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact .contactContainer .form form .formBtn:hover {
+  background: var(--primaryHover);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal {
+  background:var(--projectCardColor);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content span {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background:var(--primaryColor);
+  color: var(--projectCardColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (min-width: 640px) {
+  .cards {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 960px) {
+  .contact .contactContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start !important;
+  }
+  .contact .contactContainer .cards {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}/*# sourceMappingURL=Contact.css.map */
