@@ -26,7 +26,7 @@ const data = [
   {
     id: 2,
     image: img2,
-    github: '',
+    github: 'https://github.com/devanshimodi03/FlixHub-Recommendation-System',
     title: 'FlixHub Recommendation System',
     desc: 'Developed a FlixHub movie recommendation system that suggests films based on user preferences. Utilized machine learning algorithms to analyze user behavior and recommend personalized movie choices. ',
     // tech1: 'Html',
