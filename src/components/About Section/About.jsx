@@ -16,7 +16,7 @@ const About = () => {
           <h4>
           Hello! I'm Devanshi, a dedicated and enthusiastic Front-end developer with solid grounding in HTML,CSS,Javascript,Tailwind CSS and React.js, and a working knowledge of Node.js.
           <br/>
-          I am currently pursuing my BE from LDRP Institute of Technology and Reaserch in Gandhinagar specialisation in computer Engineering.
+          I am currently pursuing my BE from LDRP Institute of Technology and  Research in Gandhinagar specialisation in computer Engineering.
           <br/>
           My goal is to continue learning and growing as a developer,
           and I am eager to contribute to innovative projects in a collaborative team environment.
